@@ -50,3 +50,7 @@ if employee_file.readable():
     # for writing we can append or overwrite
 employee_file.close()
 
+# classes
+from Student import Student
+student1 = Student("Jim", "Business", 3.1, False)
+print(student1.gpa)

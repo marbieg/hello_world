@@ -29,3 +29,8 @@ monthConversions = {
     "Feb": "February"
 }
 print(monthConversions.get("Dec", "Invalid key"))  # default value
+
+# for loops act as for range loops in C++
+friends = ["Mark", "Kevin", "Hannah", "Toby"]
+for index in range(len(friends)):
+    print(friends[index])

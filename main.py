@@ -34,3 +34,19 @@ print(monthConversions.get("Dec", "Invalid key"))  # default value
 friends = ["Mark", "Kevin", "Hannah", "Toby"]
 for index in range(len(friends)):
     print(friends[index])
+
+# try-except block
+try:
+    answer = 10/0
+except ZeroDivisionError as err:
+    print(err)
+
+# files
+employee_file = open("employees.txt", "r+")  # r+ stands for read and write; a is for appending
+if employee_file.readable():
+    # read() - full text; readline() - one line; readlines() - puts everything into a list
+    for employee in employee_file.readlines():
+        print(employee)
+    # for writing we can append or overwrite
+employee_file.close()
+
